@@ -1,6 +1,6 @@
 # Medial Epicondyle Cropping Protocol
 
-A semi-automated, standardized 3D cropping protocol for analyzing the medial epicondyle of the human humerus, developed to facilitate the study of entheseal changes and skeletal adaptations in biological anthropology. The method ensures high repeatability and reproducbility for defining the region of interest.
+A semi-automated, standardized 3D cropping protocol for analyzing the medial epicondyle of the human humerus, developed to facilitate the study of entheseal changes and skeletal adaptations in biological anthropology. The method ensures high repeatability and reproducibility for defining the region of interest.
 <br> 
 <br>
 
