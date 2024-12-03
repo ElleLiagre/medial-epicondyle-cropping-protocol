@@ -115,7 +115,7 @@ To execute each function, enter the function call in the Python console and pres
 
 ## Data Availability
 
-The reference 3D model used in the alignment process is publicly available for download from the [MorphoSource 3D data repository](https://www.morphosource.org). This model can be used to align new humeral specimens in the same orientation. For detailed instructions on how to use the model, refer to the [How to Use](#how-to-use) section and the associated article.
+The reference 3D model used in the alignment process is publicly available for download from the [MorphoSource 3D data repository](https://www.morphosource.org/concern/media/000691022). This model can be used to align new humeral specimens in the same orientation. For detailed instructions on how to use the model, refer to the [How to Use](#how-to-use) section and the associated article.
 
 <br>
 
