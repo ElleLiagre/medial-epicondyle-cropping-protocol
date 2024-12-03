@@ -31,7 +31,7 @@ This project introduces a semi-automated, standardized 3D cropping protocol for 
 
 To improve efficiency, batch processing is incorporated, enabling the protocol to be applied to multiple humeral specimens in a streamlined manner. This feature is particularly beneficial for handling larger datasets, ensuring consistent results across specimens while minimizing manual intervention. The methodology enhances the accuracy and comparability of entheseal surface analysis, offering a valuable tool for studies on skeletal adaptations, physical activity, and human evolution, with strong potential for large-scale applications.
 
-This protocol is presented in the study by **Liagre, E.B.K.; Knüsel, C.J.; Villotte, S. (Submitted), "A Standardized, Three-Dimensional Cropping Protocol for Analyzing the Medial Epicondyle of the Humerus."** Methodological choices and further information can be found there.
+This protocol is presented in the study by **Liagre, E.B.K.; Remy, F.; Knüsel, C.J.; Villotte, S. (Submitted), "A Standardized, Three-Dimensional Cropping Protocol for Analyzing the Medial Epicondyle of the Humerus."** Methodological choices and further information can be found there.
 <br>
 <br>
 <br>
