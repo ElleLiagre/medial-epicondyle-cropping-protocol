@@ -401,7 +401,7 @@ def crop(file_path: str = None):
             coords_LM4 = get_coords(pointListNode, "LM-4")
             coords_LM5 = get_coords(pointListNode, "LM-5")
             coords_LM6 = get_coords(pointListNode, "LM-6")
-t
+
         
             # Calculate circumcenter and distances
             circumcenter, xi, eta, distances = tricircumcenter3d(coords_LM4, coords_LM5, coords_LM6)
