@@ -72,8 +72,24 @@ This project was built with the following software and library versions. Please 
 > **Note**: It’s recommended to restart 3D Slicer after installing these tools.
 <br>
 
-### Step 2: Add Functions to 3D Slicer
-1. Open 3D Slicer and go to **View** → **Python Console**.
+
+### Step 2: Set Up Your 3D Slicer Environment 
+1. **Open 3D Slicer.**  
+2. By default, 3D Slicer uses the **"Conventional" layout**, which includes a **3D view** and three slice views (**red, green, and yellow**).
+
+   Since the following functions require **only the 3D view**, you may prefer switching to the **"3D only" layout** for better visibility. You can change the layout by:  
+   - Clicking on the **"Layout selection" icon** in the toolbar (it mimics the current layout).  
+   - Or, navigating to **View** → **Layout** → **3D only** in the menu bar.  
+
+3. **Open the Python Console**, as it will be needed for the next steps. You can do this by:  
+   - Clicking the **Python icon** in the toolbar (![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)).  
+   - Or, going to **View** → **Python Console** in the menu bar.  
+   - Or, using the keyboard shortcut **CTRL + 3**.  
+<br>
+
+
+### Step 3: Add Functions to 3D Slicer
+1. Open 3D Slicer and go to the python console.
 2. Copy your Python script directly into the console, or load a `.py` file by running (replace `'path_to_your_script/your_script.py'` with the actual path to your script):
    ```python
    exec(open(r'path_to_your_script/your_script.py').read())
@@ -81,7 +97,7 @@ This project was built with the following software and library versions. Please 
 <br>
 
 
-### Step 3: Run functions
+### Step 4: Run functions
 To execute each function, enter the function call in the Python console and press **Enter**.
 
 **Note**:  
