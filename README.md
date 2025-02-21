@@ -65,9 +65,9 @@ This project was built with the following software and library versions. Please 
 ### Step 1: Install Required Software
 1. **3D Slicer**: Download from the [3D Slicer website](https://www.slicer.org).
 2. **Meshlab**: Download from the [Meshlab website](https://www.meshlab.net/).  
-   *Required for remeshing functions.*
+   *Required for remeshing function.*
 3. **SlicerMorph Extension**: Install via the **Extension Manager** in 3D Slicer. See the [SlicerMorph installation guide](https://slicermorph.github.io/) for details.  
-   *Required for orientation functions.*
+   *Required for alignment function.*
 
 > **Note**: It’s recommended to restart 3D Slicer after installing these tools.
 <br>
