@@ -57,7 +57,7 @@ def crop(modelNode: vtk.vtkPolyData) -> None:
         
         ############# Defining the anatomical landmarks ################
         
-        def set_view_and_confirm(axis, landmark_description):
+        def set_view_and_confirm(landmark_number, axis, landmark_description):
             layoutManager = slicer.app.layoutManager()
             threeDView = layoutManager.threeDWidget(0).threeDView()
             threeDView.resetFocalPoint()
@@ -65,7 +65,7 @@ def crop(modelNode: vtk.vtkPolyData) -> None:
             threeDView.rotateToViewAxis(axis)
         
             # Wait for user confirmation
-            user_input = input(f"You are about to place landmark 1, defined as '{landmark_description}'. "
+            user_input = input(f"You are about to place landmark {landmark_number}, defined as '{landmark_description}'. "
                                "Please locate this landmark on the model. Click on the 'Place a control point'-icon "
                                "(red ball with blue arrow pointing up) on the toolbar to activate point placement. "
                                "You can move the placed point by clicking and dragging until it is placed in the right location. "
@@ -79,15 +79,15 @@ def crop(modelNode: vtk.vtkPolyData) -> None:
                 return False
         
         ### Placement of LM1
-        if set_view_and_confirm(2, 'Medial-most point of the olecranon fossa'):
+        if set_view_and_confirm(1, 2, 'Medial-most point of the olecranon fossa'):
             pass
         
         ### Placement of LM2
-        if set_view_and_confirm(3, 'Viewed anteriorly: proximomedial extreme of the trochlea'):
+        if set_view_and_confirm(2, 3, 'Viewed anteriorly: proximomedial extreme of the trochlea'):
             pass
         
         ### Placement of LM3
-        if set_view_and_confirm(2, 'Viewed posteriorly: proximomedial extreme of the trochlea'):
+        if set_view_and_confirm(3, 2, 'Viewed posteriorly: proximomedial extreme of the trochlea'):
             pass 
         
         logging.info("All manual landmarks have been placed. Continuing with automatic placement of landmarks.")
