@@ -82,7 +82,7 @@ This project was built with the following software and library versions. Please 
    - Or, navigating to **View** → **Layout** → **3D only** in the menu bar.  
 
 3. **Open the Python Console**, as it will be needed for the next steps. You can do this by:  
-   - Clicking the **Python icon** in the toolbar (![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)).  
+   - Clicking the **Python logo** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" width="20">  in the toolbar.  
    - Or, going to **View** → **Python Console** in the menu bar.  
    - Or, using the keyboard shortcut **CTRL + 3**.  
 <br>
