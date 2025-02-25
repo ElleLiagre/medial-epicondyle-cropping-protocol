@@ -118,7 +118,7 @@ To execute each function, enter the function call in the Python console and pres
 
 > **Note**:  
 > - **Step 1** (installing software) needs to be done only once.  
-> - **Step 2** (adding functions to 3D Slicer) must be repeated each time you open 3D Slicer.
+> - **Step 3** (adding functions to 3D Slicer) must be repeated each time you open 3D Slicer.
 <br>
 
 ### Manual Execution of Functions 
