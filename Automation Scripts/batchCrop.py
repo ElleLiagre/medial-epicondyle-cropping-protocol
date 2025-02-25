@@ -986,4 +986,4 @@ def batchCrop(folderPath: Optional[str] = None,
             if modelNode is not None:
                 slicer.mrmlScene.Clear()
 
-    logging.info(f'All models mirrored and saved in the "{originalFolderName}_Cropped" folder.')
+    logging.info(f'All models cropped and saved in the "{originalFolderName}_Cropped" folder.')
