@@ -40,7 +40,7 @@ def capture_registration_output(logic, sourceModel, targetModel, parameters_dict
     sys.stdout = io.StringIO()
 
     try:
-        logic.ITKRegistration(sourceModel, targetModel, skipScalingOption=True, parameterDictionary=parameters_dict, usePoisson=False)
+        logic.ITKRegistration(sourceModel, targetModel, skipScalingOption=False, parameterDictionary=parameters_dict, usePoisson=False)
     except Exception as e:
         logging.error(f"Error during registration: {e}")
         return None, None
