@@ -340,6 +340,12 @@ def crop(file_path: str = None):
             xi: Local xi-coordinate relative to triangle point 'a'.
             eta: Local eta-coordinate relative to triangle point 'a'.
             distances: Distances from circumcenter to points a, b, and c.
+
+            Reference:
+            Eppstein, D., O’Rourke, J., Watson, D., & Flis, W. (1998). Circumcenters of triangles. 
+            Retrieved September 28, 2024, from The Geometry Junkyard website: 
+            https://ics.uci.edu/~eppstein/junkyard/circumcenter.html
+            
             """
             # Convert inputs to numpy arrays for easier calculations
             a, b, c = np.array(a), np.array(b), np.array(c)
