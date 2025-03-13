@@ -160,7 +160,8 @@ def crop(modelNode: vtk.vtkPolyData) -> None:
             # Calculate ranges
             x_range_LM5 = (min(chosen_z[0], P2_x) - 5.0, max(chosen_z[0], P2_x) + 1.0)
             x_range_LM6 = (min(chosen_z[0], P3_x), max(chosen_z[0], P3_x) + 1.0)
-            z_range = (chosen_z[2], coords_P3[2])
+            z_range_LM5 = (chosen_z[2], coords_P2[2])
+            z_range_LM6 = (chosen_z[2], coords_P3[2])
         
             # Subset points that fell within the x and z ranges
             polyData = modelNode.GetPolyData()
@@ -181,7 +182,7 @@ def crop(modelNode: vtk.vtkPolyData) -> None:
                 total_points_checked += 1
         
                 # Check if the point is within the specified ranges
-                if x_range_LM5[0] <= x <= x_range_LM5[1] and z_range[0] <= z <= z_range[1]:
+                if x_range_LM5[0] <= x <= x_range_LM5[1] and z_range_LM5[0] <= z <= z_range_LM5[1]:
                     filteredPoints_LM5.InsertNextPoint(point)
             
                     if y > max_y:
@@ -197,7 +198,7 @@ def crop(modelNode: vtk.vtkPolyData) -> None:
                 total_points_checked += 1
                 
                 # Check if the point is within the specified ranges
-                if x_range_LM6[0] <= x <= x_range_LM6[1] and z_range[0] <= z <= z_range[1]:
+                if x_range_LM6[0] <= x <= x_range_LM6[1] and z_range_LM6[0] <= z <= z_range_LM6[1]:
                     filteredPoints_LM6.InsertNextPoint(point)
 
                     if y < min_y:
