@@ -15,10 +15,8 @@
 # and skeletal adaptations in biological anthropology.
 #
 #
-# Reference: Liagre, E.B.K.; Remy, F.; Knüsel, C.J.; Villotte, S. (Submitted), 
-# "A Standardized, Three-Dimensional Cropping Protocol for Analyzing the Medial 
-# Epicondyle of the Humerus."
-#
+# License: This script is licensed under the GNU General Public License v3.0.
+# See https://www.gnu.org/licenses/gpl-3.0.html for more details.
 #  ===========================================================================
 #
 # Required Packages: 
