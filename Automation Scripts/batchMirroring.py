@@ -1,3 +1,27 @@
+# ===========================================================================
+# Title: A Standardized, Three-Dimensional Cropping Protocol for Analyzing 
+#        the Medial Epicondyle of the Humerus - Script for Batch Mirroring
+# 
+# Author: Elle B. K. Liagre
+# Email: elle.liagre@u-bordeaux.fr
+# ORCID: https://orcid.org/0000-0002-8993-3266
+# Version: 1.0
+# Date: 2025-03-24
+# 
+# Description: Batch function to mirror all 3D models in a specified folder. 
+# If no folder model. path is provided, a window will prompt you to select
+# one. Mirrored models will be saved in a new folder within the original
+# folder. More information can be found on: 
+# https://github.com/ElleLiagre/medial-epicondyle-cropping-protocol
+#
+# Software Requirements: 
+# - 3D Slicer (https://www.slicer.org/)
+#
+# License: This script is licensed under the GNU General Public License v3.0.
+# See https://www.gnu.org/licenses/gpl-3.0.html for more details.
+# ===========================================================================  
+
+
 import slicer
 import qt
 import os
