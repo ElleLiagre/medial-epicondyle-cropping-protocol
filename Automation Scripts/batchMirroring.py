@@ -9,8 +9,8 @@
 # Date: 2025-03-24
 # 
 # Description: Batch function to mirror all 3D models in a specified folder. 
-# If no folder model. path is provided, a window will prompt you to select
-# one. Mirrored models will be saved in a new folder within the original
+# If no folder path is provided, a window will prompt you to select one.
+# Mirrored models will be saved in a new folder within the original
 # folder. More information can be found on: 
 # https://github.com/ElleLiagre/medial-epicondyle-cropping-protocol
 #
