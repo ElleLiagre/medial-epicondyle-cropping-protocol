@@ -9,10 +9,11 @@
 # Date: 2025-03-24
 # 
 # Description: Batch function to align all 3D models in a folder to a reference 
-# model. Note: Requires the SlicerMorph extension. Load the reference model in 
-# 3D Slicer and name it "target" before running the function. A reference model 
-# is provided, or use your own. The aligned models will be saved in a new folder 
-# within the original folder. More information can be found on: 
+# model. Note: Requires the SlicerMorph extension in 3D Slicer. Load the 
+# reference model in 3D Slicer and name it "target" before running the function.
+# You can use the reference model provided, or your own model. The aligned 
+# models will be saved in a new folder within the original folder. 
+# More information can be found on: 
 # https://github.com/ElleLiagre/medial-epicondyle-cropping-protocol
 #
 # Software Requirements: 
