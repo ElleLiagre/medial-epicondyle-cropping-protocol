@@ -27,11 +27,11 @@ ORCID <span>&nbsp;&nbsp;&nbsp;</span>   *[https://orcid.org/0000-0002-8993-3266]
 
 ## Description
 
-This project introduces a semi-automated, standardized 3D cropping protocol for analyzing the medial epicondyle of the human humerus, with a focus on its entheses. The protocol, implemented in **3DSlicer** using the **PyMeshLab** and **SlicerMorph** extensions, standardizes input models —such as mesh resolution and anatomical orientation—ensuring high repeatability and reproducibility in the analysis. Anatomical landmarks define the boundaries of the medial epicondyle, accounting for variations in humeral size, and ensuring consistent capture of the entire entheseal surface, even amidst anatomical variability.
+This project introduces a semi-automated, standardized 3D cropping protocol for analyzing the medial epicondyle of the human humerus, with a focus on its entheses. The protocol, implemented in **3DSlicer** using the **PyMeshLab** package and the **SlicerMorph** extensions, standardizes input models —such as mesh resolution and anatomical orientation—ensuring high repeatability and reproducibility in the analysis. Anatomical landmarks define the boundaries of the medial epicondyle, accounting for variations in humeral size, and ensuring consistent capture of the entire entheseal surface, even amidst anatomical variability.
 
 To improve efficiency, batch processing is incorporated, enabling the protocol to be applied to multiple humeral specimens in a streamlined manner. This feature is particularly beneficial for handling larger datasets, ensuring consistent results across specimens while minimizing manual intervention. The methodology enhances the accuracy and comparability of entheseal surface analysis, offering a valuable tool for studies on skeletal adaptations, physical activity, and human evolution, with strong potential for large-scale applications.
 
-This protocol is presented in the study by **Liagre, E.B.K.; Remy, F.; Knüsel, C.J.; Villotte, S. (Under review), "A Standardized, Three-Dimensional Cropping Protocol for Analyzing the Medial Epicondyle of the Humerus."** Methodological choices and further information can be found there.
+This protocol is presented in the study by **Liagre, E.B.K.; Remy, F.; Villotte, S.; Knüsel, C.J. (Under review), "A Standardized, Three-Dimensional Cropping Protocol for Analyzing the Medial Epicondyle of the Humerus."** Methodological choices and further information can be found there.
 <br>
 <br>
 <br>
@@ -43,7 +43,6 @@ This project was built with the following software and library versions. Please 
 
 - **3D Slicer**: >= 5.6.2
 - **SlicerMorph**: >= 5151748
-- **Meshlab**: >= 2022.02
 
 ### Python Libraries
 - **PyMeshLab**: >= 2023.12.post2
@@ -55,7 +54,6 @@ This project was built with the following software and library versions. Please 
 - Fedorov, A., Beichel, R., Kalpathy-Cramer, J., Finet, J., Fillion-Robin, J.-C., Pujol, S., … Kikinis, R. (2012). 3D Slicer as an image computing platform for the Quantitative Imaging Network. *Magnetic Resonance Imaging, 30*(9), 1323–1341. [doi: 10.1016/j.mri.2012.05.001](https://doi.org/10.1016/j.mri.2012.05.001)
 - Rolfe, S., Pieper, S., Porto, A., Diamond, K., Winchester, J., Shan, S., … Maga, A. M. (2021). SlicerMorph: An open and extensible platform to retrieve, visualize and analyse 3D morphology. *Methods in Ecology and Evolution, 12*(10), 1816–1825. [doi: 10.1111/2041-210X.13669](https://doi.org/10.1111/2041-210X.13669)
 - Porto, A., Rolfe, S., & Maga, A. M. (2021). ALPACA: A fast and accurate computer vision approach for automated landmarking of three‐dimensional biological structures. *Methods in Ecology and Evolution, 12*(11), 2129–2144. [doi: 10.1111/2041-210X.13689](https://doi.org/10.1111/2041-210X.13689)
-- Cignoni, P., Callieri, M., Corsini, M., Dellepiane, M., Ganovelli, F., & Ranzuglia, G. (2008). MeshLab: An Open-Source Mesh Processing Tool. *Europgraphics Italian Chapter Conference*, 8.
 - Muntoni, A., & Cignoni, P. (2024). *PyMeshLab: PyMeshLab v2023.12.post2*. Zenodo. [doi: 10.5281/zenodo.13768931](https://doi.org/10.5281/zenodo.13768931)
 <br>
 
@@ -65,9 +63,7 @@ This document includes a short overview of how to use the protocol. A more detai
 
 ### Step 1: Install Required Software
 1. **3D Slicer**: Download from the [3D Slicer website](https://www.slicer.org).
-2. **Meshlab**: Download from the [Meshlab website](https://www.meshlab.net/).  
-   *Required for remeshing function.*
-3. **SlicerMorph Extension**: Install via the **Extension Manager** in 3D Slicer. See the [SlicerMorph installation guide](https://slicermorph.github.io/) for details.  
+2. **SlicerMorph Extension**: Install via the **Extension Manager** in 3D Slicer. See the [SlicerMorph installation guide](https://slicermorph.github.io/) for details.  
    *Required for alignment function.*
 
 > **Note**: It’s recommended to restart 3D Slicer after installing these tools.
@@ -124,7 +120,7 @@ To execute each function, enter the function call in the Python console and pres
 
 ### Manual Execution of Functions 
    The `Remeshing`, `Mirroring`, and `FastModelAlign` functions can also be run manually for a single model:
-   - **Remeshing**: Uses "Remeshing: Isotropic Explicit Remeshing" and "Simplification: Quadric Edge Collapse Decimation" filters in Meshlab.
+   - **Remeshing**: Uses "Remeshing: Isotropic Explicit Remeshing" and "Simplification: Quadric Edge Collapse Decimation" filters in [Meshlab](https://www.meshlab.net/).
    - **Mirroring**: Available in 3D Slicer’s **Surface Toolbox** module.
    - **FastModelAlign**: Available through the **SlicerMorph** extension in 3D Slicer (requires download and installation as noted in Step 1). Detailed instructions on how to use this function can be found in the [FastModelAlign tutorial](https://github.com/SlicerMorph/Tutorials/tree/main/FastModelAlign).
 <br>
