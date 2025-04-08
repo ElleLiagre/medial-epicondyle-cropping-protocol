@@ -1,6 +1,6 @@
 # ===========================================================================
 # Title: A Standardized, Three-Dimensional Cropping Protocol for Analyzing 
-#        the Medial Epicondyle of the Humerus - Script for Batch Alignment
+#        the Medial Epicondyle of the Humerus - Python Script for Batch Alignment
 # 
 # Author: Elle B. K. Liagre
 # Email: elle.liagre@u-bordeaux.fr
@@ -17,8 +17,8 @@
 # https://github.com/ElleLiagre/medial-epicondyle-cropping-protocol
 #
 # Software Requirements: 
-# - 3D Slicer (https://www.slicer.org/)
-# - SlicerMorph extension (https://github.com/SlicerMorph)
+# - 3D Slicer (>= 5.6.2) (https://www.slicer.org/)
+# - SlicerMorph extension >= 5151748) (https://github.com/SlicerMorph)
 #
 # License: This script is licensed under the GNU General Public License v3.0.
 # See https://www.gnu.org/licenses/gpl-3.0.html for more details.
