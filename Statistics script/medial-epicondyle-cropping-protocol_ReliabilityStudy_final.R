@@ -8,7 +8,7 @@
 # Version: 1.0
 # Date: 2024-12-03
 # 
-# Description: This script includes the statistics used to test the repeatability 
+# Description: This R script includes the statistics used to test the repeatability 
 # and reproducibility of a semi-automated, standardized 3D cropping protocol for 
 # analyzing the medial epicondyle of the human humerus. The method ensures high 
 # repeatability and reproducibility, facilitating the study of entheseal changes 
@@ -56,8 +56,6 @@
 #       3. Lin's concordance correlation plots
 # 
 # R Version: v4.3.2
-# Platform: Microsoft Windows 11 Professional
-# License: GPL 3.0
 # ===========================================================================
 
 ## Please clear environment `rm(list = ls())` and run the whole script ##
