@@ -1,6 +1,6 @@
 # ===========================================================================
 # Title: A Standardized, Three-Dimensional Cropping Protocol for Analyzing 
-#        the Medial Epicondyle of the Humerus - Script for Batch Remeshing
+#        the Medial Epicondyle of the Humerus - Python Script for Batch Remeshing
 # 
 # Author: Elle B. K. Liagre
 # Email: elle.liagre@u-bordeaux.fr
@@ -16,8 +16,8 @@
 # https://github.com/ElleLiagre/medial-epicondyle-cropping-protocol
 #
 # Software Requirements: 
-# - 3D Slicer (https://www.slicer.org/)
-# - Meshlab (https://www.meshlab.net/)
+# - 3D Slicer (>= 5.6.2) (https://www.slicer.org/)
+# - PyMeshLab (>= 2023.12.post2) (https://pypi.org/project/pymeshlab/)
 #
 # License: This script is licensed under the GNU General Public License v3.0.
 # See https://www.gnu.org/licenses/gpl-3.0.html for more details.
